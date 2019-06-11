@@ -17,7 +17,7 @@ body {
 .site-wrap {
   border-radius: 15px;
   background-color: whitesmoke;
-  width: 70vw;
+  width: 90vw;
 }
 
 .gallery {
@@ -84,19 +84,19 @@ body {
 }
 
 .gallery-item:nth-child(1) > .img-container > .img {
-  background-image: url("https://picsum.photos/id/555/500/500");
+  background-image: url("https://picsum.photos/id/555/800/800");
 }
 
 .gallery-item:nth-child(2) > .img-container > .img {
-  background-image: url("https://picsum.photos/id/528/500/500");
+  background-image: url("https://picsum.photos/id/528/800/800");
 }
 
 .gallery-item:nth-child(3) > .img-container > .img {
-  background-image: url("https://picsum.photos/id/675/500/500/");
+  background-image: url("https://picsum.photos/id/675/800/800/");
 }
 
 .gallery-item:nth-child(4) > .img-container > .img {
-  background-image: url("https://picsum.photos/id/487/500/500/");
+  background-image: url("https://picsum.photos/id/487/800/800/");
 }
 
 .img-container > .img > .gallery-label h2 {
