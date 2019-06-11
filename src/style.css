@@ -7,42 +7,30 @@
 
 body {
   background: #f9f7f6;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-
-}
-
-.header-title {
-  font-family: "Fugaz One", cursive;
-  font-size: 45px;
-  display: block;
-  color: #333;
-  text-align: left;
-  padding-left: 0.35em;
-}
-
-.header-title span {
-  display: block;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #dc8265;
-  font-family: "Unica One";
-  margin-top: 0.35em;
-}
-
-.gallery {
-  width: 85%;
-  margin: 35px auto;
-  padding: 0;
-  text-align: center;
+  padding: 70px;
+  background-color: #333;
 }
 
 .site-wrap {
-  max-width: 700px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  width: 70vw;
 }
 
-.gallery .gallery-item {
+.gallery {
+  width: 100%;
+  margin: 35px auto;
+  padding: 0;
+  text-align: right;
+}
+.gallery .gallery-row {
+  display: flex;
+  padding: 0 15px;
+}
+.gallery .gallery-row .gallery-item {
   min-height: 180px;
   background: #ccc;
   cursor: pointer;
@@ -54,34 +42,36 @@ body {
   flex: 1;
   overflow: hidden;
 }
-
-.gallery .gallery-item .img-container {
-  width: 100%;
-}
-
-.gallery .gallery-item .img-container .img {
+.gallery .gallery-row .gallery-item .img-container .img {
   display: block;
   min-height: 180px;
   width: 100%;
   background-size: cover;
   transition: all ease-in 400ms;
 }
-
-.gallery .gallery-item:hover .gallery-label h2 {
+.gallery .gallery-row .gallery-item:hover .gallery-label h2 {
   color: #333;
 }
-
-.gallery .gallery-item:hover .gallery-label .gallery-sublabel {
+.gallery .gallery-row .gallery-item:hover .gallery-label .gallery-sublabel {
   transform: translate(-20px, 90px);
-  color: #517e88;
+  color: #777;
 }
-
-.gallery .gallery-item:hover .img-overlay {
+.gallery .gallery-row .gallery-item:hover .img-overlay {
   display: block;
 }
 
-.gallery-row {
-  display: flex;
+.toggle-content {
+  display: none;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+.toggle-content.is-visible {
+  display: block;
+  height: auto;
+  opacity: 1;
 }
 
 .img-overlay {
@@ -93,52 +83,31 @@ body {
   transition: all ease-in 400ms;
 }
 
-.gallery-item:nth-child(1)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2");
+.gallery-item:nth-child(1) > .img-container > .img {
+  background-image: url("https://picsum.photos/id/555/500/500");
 }
 
-.gallery-item:nth-child(2)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1469751434990-62dd6a1c5b29");
+.gallery-item:nth-child(2) > .img-container > .img {
+  background-image: url("https://picsum.photos/id/528/500/500");
 }
 
-.gallery-item:nth-child(3)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8");
+.gallery-item:nth-child(3) > .img-container > .img {
+  background-image: url("https://picsum.photos/id/675/500/500/");
 }
 
-.gallery-item:nth-child(4)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1423784346385-c1d4dac9893a");
+.gallery-item:nth-child(4) > .img-container > .img {
+  background-image: url("https://picsum.photos/id/487/500/500/");
 }
 
-.gallery-item:nth-child(5)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2");
-}
-
-.gallery-item:nth-child(6)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1469751434990-62dd6a1c5b29");
-}
-
-.gallery-item:nth-child(7)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8");
-}
-
-.gallery-item:nth-child(8)>.img-container>.img {
-  background-image: url("https://images.unsplash.com/photo-1423784346385-c1d4dac9893a");
-}
-
-.img-container>.img>.gallery-label h2 {
-  font-family: "Fugaz One", cursive;
-  font-size: 25px;
+.img-container > .img > .gallery-label h2 {
   color: #fff;
   text-transform: uppercase;
-  transform: translateX(-1em);
-  padding-top: 1em;
+  padding-top: 10px;
+  text-align: center;
   transition: all ease-in 400ms;
-  text-align: right;
-  width: 100%;
-  display: inline-block;
+  background: rgba(172, 170, 170, 0.8);
 }
-
-.img-container>.img>.gallery-label .gallery-sublabel {
+.img-container > .img > .gallery-label .gallery-sublabel {
   font-size: 18px;
   font-family: "Unica One";
   text-transform: uppercase;
@@ -151,13 +120,26 @@ body {
   transition: all ease-in 400ms;
 }
 
-.gallery-modal {
+.toggle-content {
   display: none;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+.toggle-content.is-visible {
+  display: block;
+  height: auto;
+  opacity: 1;
+}
+
+.gallery-modal {
   /* commented out due to lack of sidebar */
   /* width: calc(100% - 215px);  */
   /* transform: translateX(215px);  */
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -168,40 +150,26 @@ body {
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-
 .gallery-modal .gallery-modal-body {
-  background: rgba(255, 255, 255, 0.8);
-  height: 65%;
-  width: 90%;
-  transform: translateY(20%);
+  background: rgba(122, 122, 122, 0.8);
+  height: 90vh;
+  width: 90vw;
   padding: 25px 25px 0 45px;
   margin: 0 auto;
-  overflow-y: scroll;
 }
-
 .gallery-modal .gallery-modal-body .modal-close {
   float: right;
   cursor: pointer;
 }
-
-.gallery-table {
-  width: 100%;
-}
-
-.gallery-table tr td {
+.gallery-modal .gallery-modal-body .gallery-container {
   font-size: 16px;
   line-height: 1.4;
   text-align: left;
   padding: 10px 20px;
   font-family: "Vollkorn", serif;
 }
-
-.gallery-table tr td img {
-  display: block;
-  height: auto;
-}
-
-.gallery-table tr th {
+.gallery-modal .gallery-modal-body .gallery-container .gallery-modal-item {
+  display: grid;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -210,14 +178,23 @@ body {
   color: #333;
   padding: 10px 30px;
 }
-
-.gallery-table tr th p {
+.gallery-modal .gallery-modal-body .gallery-container .gallery-modal-item p {
   margin-top: 15px;
   font-size: 16px;
   font-family: "Vollkorn", serif;
   text-transform: none;
   font-weight: normal;
   line-height: 1.5;
+}
+.gallery-modal .gallery-modal-body .gallery-container .gallery-modal-item .project-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.gallery-modal .gallery-modal-body .gallery-container .gallery-modal-item img {
+  display: block;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
