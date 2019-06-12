@@ -169,8 +169,8 @@ body {
   /* commented out due to lack of sidebar */
   // width: calc(100% - 215px);
   // transform: translateX(215px);
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position: fixed;
   // overflow: hidden;
   top: 0;
@@ -190,7 +190,7 @@ body {
     height: 80%;
     // transform: translateY(20%);
     padding: 25px 25px 0 45px;
-    margin: 0 auto;
+    margin: 25px auto;
     // overflow-y: scroll;
 
     // transition: height 3500ms ease-in-out, opacity 7500ms ease-in-out;
@@ -231,7 +231,7 @@ body {
           display: grid;
           grid-gap: 20px;
           grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(2, 1fr);
+          grid-template-rows: repeat(1, 1fr);
 
           width: 80%;
           height: 80%;

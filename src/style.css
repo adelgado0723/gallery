@@ -126,8 +126,8 @@ body {
 
 .gallery-modal {
   /* commented out due to lack of sidebar */
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -142,7 +142,7 @@ body {
   width: 80%;
   height: 80%;
   padding: 25px 25px 0 45px;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .gallery-modal .gallery-modal-body .modal-close {
   float: right;
@@ -177,7 +177,7 @@ body {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   width: 80%;
   height: 80%;
 }
