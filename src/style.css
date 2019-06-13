@@ -35,7 +35,9 @@ body {
   padding: 0 15px;
 }
 .gallery .gallery-container .gallery-item {
-  min-height: 180px;
+  width: 100%;
+  height: 100%;
+  min-height: 25vh;
   background: #ccc;
   cursor: pointer;
   transition: 400ms all linear;
@@ -50,8 +52,7 @@ body {
   width: 100%;
 }
 .gallery .gallery-container .gallery-item .img-container .img {
-  min-height: 180px;
-  width: 100%;
+  min-height: 25vh;
   background-size: cover;
   transition: all ease-in 400ms;
 }
@@ -59,7 +60,7 @@ body {
   color: #333;
 }
 .gallery .gallery-container .gallery-item:hover .gallery-label .gallery-sublabel {
-  transform: translate(-20px, 90px);
+  transform: translate(0px, 50px);
   color: #777;
 }
 .gallery .gallery-container .gallery-item:hover .img-overlay {
@@ -82,7 +83,8 @@ body {
 
 .img-overlay {
   width: 100%;
-  min-height: 180px;
+  height: 100%;
+  min-height: 25vh;
   background: rgba(255, 255, 255, 0.8);
   display: none;
   position: absolute;
@@ -102,7 +104,7 @@ body {
   font-family: "Unica One";
   text-transform: uppercase;
   font-weight: bold;
-  transform: translate(-20px, 190px);
+  transform: translate(20px, 150px);
   display: block;
   padding-top: 0.25em;
   text-align: right;
@@ -124,9 +126,12 @@ body {
   opacity: 1;
 }
 
+.modal-close:hover {
+  transform: scale(1.5);
+}
+
 .gallery-modal {
-  /* commented out due to lack of sidebar */
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   position: fixed;
   top: 0;
@@ -135,18 +140,18 @@ body {
   padding: 0;
   margin: 0;
   background: rgba(0, 0, 0, 0.8);
-  text-align: center;
 }
 .gallery-modal .gallery-modal-body {
   background: rgba(122, 122, 122, 0.8);
-  width: 80%;
-  height: 80%;
-  padding: 25px 25px 0 45px;
-  margin: 25px auto;
+  padding: 25px 25px 0 0px;
+  margin: 25px;
+  height: 100%;
 }
 .gallery-modal .gallery-modal-body .modal-close {
   float: right;
   cursor: pointer;
+  transition: all 500ms ease-in-out;
+  height: 50px;
 }
 .gallery-modal .gallery-modal-body .gallery-modal-container {
   font-size: 16px;
@@ -161,9 +166,7 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   text-align: left;
-  vertical-align: top;
   color: #333;
-  padding: 10px 30px;
 }
 .gallery-modal .gallery-modal-body .gallery-modal-container .gallery-modal-item p {
   margin-top: 15px;
@@ -178,12 +181,8 @@ body {
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  width: 80%;
-  height: 80%;
-}
-.gallery-modal .gallery-modal-body .gallery-modal-container .gallery-modal-item img {
-  display: block;
-  height: auto;
+  justify-content: center;
+  align-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

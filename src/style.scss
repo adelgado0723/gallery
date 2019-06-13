@@ -46,14 +46,16 @@ body {
     padding: 0 15px;
 
     .gallery-item {
-      min-height: 180px;
+      width: 100%;
+      height: 100%;
+      min-height: 25vh;
+
       background: #ccc;
       cursor: pointer;
       transition: 400ms all linear;
       margin: 0 1%;
       padding: 0;
       position: relative;
-      // display: inline-flex;
       flex: 1;
       overflow: hidden;
       box-shadow: 0 13px 25px rgba(50, 50, 93, 0.1),
@@ -64,10 +66,7 @@ body {
         width: 100%;
 
         .img {
-          // display: block;
-          min-height: 180px;
-          // height: 100%;
-          width: 100%;
+          min-height: 25vh;
           background-size: cover;
           transition: $transition;
 
@@ -79,8 +78,9 @@ body {
           color: #333;
         }
 
+        // changes with media query
         .gallery-sublabel {
-          transform: translate(-20px, 90px);
+          transform: translate(0px, 50px);
           color: #777;
         }
       }
@@ -106,12 +106,10 @@ body {
   opacity: 1;
 }
 
-// .gallery-row {
-//   display: flex;}
-
 .img-overlay {
   width: 100%;
-  min-height: 180px;
+  height: 100%;
+  min-height: 25vh;
   background: rgba(255, 255, 255, 0.8);
   display: none;
   position: absolute;
@@ -121,28 +119,21 @@ body {
 .img-container>.img>.gallery-label {
 
   h2 {
-    // font-family: $title-font;
-    // font-size: 25px;
     color: #fff;
     text-transform: uppercase;
-    // transform: translateX(-1em);
-    // padding-top: 10px;
     text-align: center;
     text-justify: center;
     transition: $transition;
-    // text-align: right;
-    // width: 100%;
-    // display: ;
     background: rgba(172, 170, 170, 0.8);
-    // border-radius: 5px;
   }
 
+  // changes with media query
   .gallery-sublabel {
     font-size: 18px;
     font-family: $accent-font;
     text-transform: uppercase;
     font-weight: bold;
-    transform: translate(-20px, 190px);
+    transform: translate(20px, 150px);
     display: block;
     padding-top: 0.25em;
     text-align: right;
@@ -165,11 +156,12 @@ body {
   opacity: 1;
 }
 
+.modal-close:hover {
+  transform: scale(1.5);
+}
+
 .gallery-modal {
-  /* commented out due to lack of sidebar */
-  // width: calc(100% - 215px);
-  // transform: translateX(215px);
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   position: fixed;
   // overflow: hidden;
@@ -179,27 +171,23 @@ body {
   padding: 0;
   margin: 0;
   background: rgba(0, 0, 0, 0.8);
-  text-align: center;
-
-  // transition: $transition;
 
   .gallery-modal-body {
     background: rgba(122, 122, 122, 0.8);
-    // height: 80vh;
-    width: 80%;
-    height: 80%;
-    // transform: translateY(20%);
-    padding: 25px 25px 0 45px;
-    margin: 25px auto;
-    // overflow-y: scroll;
+    padding: 25px 25px 0 0px;
+    margin: 25px;
+    height: 100%;
 
     // transition: height 3500ms ease-in-out, opacity 7500ms ease-in-out;
-
 
     .modal-close {
       float: right;
       cursor: pointer;
+      // transform: scale(1);
+      transition: all 500ms ease-in-out;
+      height: 50px;
     }
+
 
     .gallery-modal-container {
       font-size: 16px;
@@ -214,9 +202,7 @@ body {
         text-transform: uppercase;
         font-size: 20px;
         text-align: left;
-        vertical-align: top;
         color: #333;
-        padding: 10px 30px;
 
         p {
           margin-top: 15px;
@@ -232,15 +218,12 @@ body {
           grid-gap: 20px;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(1, 1fr);
+          justify-content: center;
+          align-content: center;
 
-          width: 80%;
-          height: 80%;
         }
 
-        img {
-          display: block;
-          height: auto;
-        }
+        img {}
       }
     }
 

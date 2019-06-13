@@ -1,7 +1,8 @@
 const modalClose = document.querySelector('.modal-close');
-const galleryItem = document.querySelectorAll('.gallery-item');
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryModal = document.querySelector('.gallery-modal');
+
+const galleryModalBody = document.querySelector('.gallery-modal-body');
 const projectName = document.querySelector('.project-name');
 const projectDesc = document.querySelector('.project-desc');
 const projectContent = document.querySelector('.project-content');
@@ -93,26 +94,6 @@ const projects = [
   },
 ];
 
-// galleryItem.forEach((item, index) => {
-//   item.querySelector('.gallery-label > h2').textContent = projects[index].name;
-//   item.querySelector(
-//     '.img'
-//   ).style.backgroundImage = `url(${projects[index].background})`;
-//   item.querySelector('.gallery-sublabel').textContent = projects[index].label;
-
-//   item.addEventListener('click', () => {
-//     projectName.textContent = projects[index].name;
-//     projectDesc.textContent = projects[index].info;
-
-//     let projectImages = '';
-//     projects[index].images.forEach((imgURL) => {
-//       projectImages += `<img src=${imgURL}>`;
-//     });
-//     projectContent.innerHTML = projectImages;
-
-//     galleryModal.classList.add('is-visible');
-//   });
-
 projects.forEach((project) => {
   const projectEntry = document.createElement('div');
   projectEntry.classList.add('gallery-item');
@@ -141,13 +122,16 @@ projects.forEach((project) => {
     });
     projectContent.innerHTML = projectImages;
     galleryModal.classList.add('is-visible');
+    galleryModalBody.classList.add('is-visible');
   });
 
   galleryContainer.appendChild(projectEntry);
-  // $(document.querySelector('body')).css('overflow-y', 'hidden');
+  // document.querySelector('body').setAttribute('overflow-y', 'hidden');
 });
 
 modalClose.addEventListener('click', () => {
   galleryModal.classList.remove('is-visible');
-  // body.setAttribute('overflow-y', 'auto');
+
+  galleryModalBody.classList.remove('is-visible');
+  // document.querySelector('body').setAttribute('overflow-y', 'auto');
 });
