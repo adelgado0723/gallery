@@ -174,35 +174,51 @@ body {
 
   .gallery-modal-body {
     background: rgba(122, 122, 122, 0.8);
-    padding: 25px 25px 0 0px;
+    // padding: 25px 25px 0 0px;
     margin: 25px;
     height: 100%;
-
+    // padding: 0px 0px;
     // transition: height 3500ms ease-in-out, opacity 7500ms ease-in-out;
 
     .modal-close {
       float: right;
       cursor: pointer;
-      // transform: scale(1);
       transition: all 500ms ease-in-out;
-      height: 50px;
+      height: 25px;
+      padding: 10px;
+      // border: 5px solid red;
     }
 
+    .project-name {
+      float: left;
+      padding: 10px;
+      font-size: 50px;
+    }
 
     .gallery-modal-container {
       font-size: 16px;
       line-height: 1.4;
       text-align: left;
-      padding: 10px 20px;
       font-family: 'Vollkorn', serif;
+      display: grid;
+      padding: 0px 20px;
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+      height: 100%;
 
       .gallery-modal-item {
-        display: grid;
         font-family: $body-font;
         text-transform: uppercase;
         font-size: 20px;
         text-align: left;
         color: #333;
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
 
         p {
           margin-top: 15px;
