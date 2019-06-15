@@ -6,15 +6,18 @@ const galleryModalBody = document.querySelector('.gallery-modal-body');
 const projectName = document.querySelector('.project-name');
 const projectDesc = document.querySelector('.project-desc');
 const projectContent = document.querySelector('.project-content');
+const smallCarouselImages = document.querySelector('.carousel-smaller');
+const activeCarouselImage = document.querySelector('.carousel > img');
 
 function handleGalleryClick(event) {
-  //refresh carousel
+  // TODO: refresh carousel
   console.log('Click event hooked up', event);
 }
 
-// Creating and storing an img el element for
-// each image attached to each project
+// Creates imageElements property on each project in the
+// projects array.
 Data.projects.forEach(function createImgElements(project) {
+  // Making an HTML img element from each project
   project.imageElements = project.images.map(function makeCarouselItem(
     url,
     index
@@ -28,53 +31,46 @@ Data.projects.forEach(function createImgElements(project) {
   });
 });
 
-Data.projects.forEach((project) => {
+// Uses data from each project and to create DOM elements
+Data.projects.forEach(function loadProjects(project) {
   const projectEntry = document.createElement('div');
   projectEntry.classList.add('gallery-item');
 
-  // TODO : create this array and store it on loading
+  // Sets up the image displayed in the gallery using
+  // the passed in project
   projectEntry.innerHTML = `     
-            <div class="img-container">
-              <div class="img">
-                <div class="img-overlay"></div>
-                <div class="gallery-label">
-                  <h2>${project.name}</h2>
-                  <span class="gallery-sublabel">${project.label}</span>
-                </div>
-              </div>
-            </div>
-    `;
+    <div class="img-container">
+      <div class="img">
+        <div class="img-overlay"></div>
+        <div class="gallery-label">
+          <h2>${project.name}</h2>
+          <span class="gallery-sublabel">${project.label}</span>
+        </div>
+      </div>
+    </div>
+  `;
 
   const background = projectEntry.querySelector('.img');
   background.style.backgroundImage = `url(${project.background})`;
 
-  projectEntry.addEventListener('click', function addProjectClickListener() {
+  // Creates an event listener that sets up the modal context
+  projectEntry.addEventListener('click', function setUpModalContext() {
     projectName.textContent = project.name;
     projectDesc.textContent = project.info;
-    projectContent.innerHTML = '';
-    // Set the active image
-
+    activeCarouselImage.src = project.images[0];
+    activeCarouselImage.alt = project.name + ' image';
+    smallCarouselImages.innerHTML = '';
     // Setting up the carousel images
     project.imageElements.forEach(function attachCarouselImages(image) {
-      projectContent.appendChild(image);
+      smallCarouselImages.appendChild(image);
     });
-    // const carousel = `
-    //   <div class="carousel">
-    //   </div>
-    // `;
 
-    // TODO : remove one of these
     galleryModal.classList.add('is-visible');
-    galleryModalBody.classList.add('is-visible');
   });
 
   galleryContainer.appendChild(projectEntry);
-  // document.querySelector('body').setAttribute('overflow-y', 'hidden');
 });
 
 modalClose.addEventListener('click', function addCloseButtonListener() {
-  // TODO : remove one of these
   galleryModal.classList.remove('is-visible');
-  galleryModalBody.classList.remove('is-visible');
-  // document.querySelector('body').setAttribute('overflow-y', 'auto');
 });
