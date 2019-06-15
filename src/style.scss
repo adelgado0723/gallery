@@ -230,15 +230,15 @@ body {
           line-height: 1.5;
         }
 
-        .project-content {
-          display: grid;
-          grid-gap: 20px;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(1, 1fr);
-          justify-content: center;
-          align-content: center;
+        // .project-content {
+        //   display: grid;
+        //   grid-gap: 20px;
+        //   grid-template-columns: repeat(4, 1fr);
+        //   grid-template-rows: repeat(1, 1fr);
+        //   justify-content: center;
+        //   align-content: center;
 
-        }
+        // }
 
         img {}
       }

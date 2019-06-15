@@ -192,13 +192,5 @@ body {
   font-weight: normal;
   line-height: 1.5;
 }
-.gallery-modal .gallery-modal-body .gallery-modal-container .gallery-modal-item .project-content {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-content: center;
-  align-content: center;
-}
 
 /*# sourceMappingURL=style.css.map */
