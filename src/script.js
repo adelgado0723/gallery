@@ -8,22 +8,23 @@ const projectDesc = document.querySelector('.project-desc');
 const projectContent = document.querySelector('.project-content');
 const smallCarouselImages = document.querySelector('.carousel-smaller');
 const activeCarouselImage = document.querySelector('.active-large');
-const fadingActiveImage = document.querySelector('.fading');
+// const fadingActiveImage = document.querySelector('.fading');
 
 function fadeImage(imageURL) {
-  activeCarouselImage.src = imageURL;
-  setTimeout(function changeFadeImage() {
-    fadingActiveImage.src = imageURL;
-    fadingActiveImage.classList.remove('fading');
-
-    fadingActiveImage.classList.remove('fading');
-  }, 500);
+  // activeCarouselImage.src = imageURL;
+  // setTimeout(function changeFadeImage() {
+  //   fadingActiveImage.src = imageURL;
+  //   fadingActiveImage.classList.remove('fading');
+  //   fadingActiveImage.classList.remove('fading');
+  // }, 500);
 }
 function handleGalleryClick(event) {
   // TODO: add transition
-  fadingActiveImage.classList.remove('fading');
-  activeCarouselImage.classList.add('fading');
-  fadeImage(this.src);
+  // fadingActiveImage.classList.remove('fading');
+  // activeCarouselImage.classList.add('fading');
+  // fadeImage(this.src);
+
+  activeCarouselImage.src = this.src;
 }
 
 // Creates imageElements property on each project in the
@@ -77,8 +78,8 @@ Data.projects.forEach(function loadProjects(project) {
     activeCarouselImage.src = project.images[0];
     activeCarouselImage.alt = project.name + ' image';
 
-    fadingActiveImage.src = project.images[0];
-    fadingActiveImage.classList.remove('fading');
+    // fadingActiveImage.src = project.images[0];
+    // fadingActiveImage.classList.remove('fading');
     smallCarouselImages.innerHTML = '';
     // Setting up the carousel images
     project.imageElements.forEach(function attachCarouselImages(image) {
