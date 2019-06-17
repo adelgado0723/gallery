@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato|Unica+One|Fugaz+One"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Unica+One|Fugaz+One" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projects</title>
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-  <title>Projects</title>
-</head>
-
-<body>
-  <div class="site-wrap">
-    <div class="gallery-modal toggle-content">
-      <div class="gallery-modal-body">
-        <span class="project-name"></span>
-        <i class="fa fa-remove fa-2x modal-close"></i>
-        <div class="gallery-modal-container">
-          <div class="gallery-modal-item">
-            <p class="project-desc"></p>
-            <div class="project-content" data-project="">
-              <div class="carousel">
-                <img src="" alt="">
-                <div class="carousel-smaller">
-
+  <body>
+    <div class="site-wrap">
+      <div class="gallery-modal toggle-content">
+        <div class="gallery-modal-body">
+          <span class="project-name"></span>
+          <i class="fa fa-remove fa-2x modal-close"></i>
+          <div class="gallery-modal-container">
+            <div class="gallery-modal-item">
+              <p class="project-desc"></p>
+              <div class="project-content" data-project="">
+                <div class="carousel">
+                  <div class="display-image-container">
+                    <img class="fading" src="" alt="" />
+                    <img class="active-large" alt="" src="" />
+                  </div>
+                  <div class="carousel-smaller"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="gallery">
+        <div class="gallery-container"></div>
+      </div>
     </div>
+  </body>
 
-    <div class="gallery">
-      <div class="gallery-container"></div>
-    </div>
-  </div>
-</body>
-
-<script src="https://use.fontawesome.com/934d09d5de.js"></script>
-<script src="script.js"></script>
-
+  <script src="https://use.fontawesome.com/934d09d5de.js"></script>
+  <script src="script.js"></script>
 </html>
