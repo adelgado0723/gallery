@@ -14,7 +14,7 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['Python', 'Tkinter', 'TCP Sockets', 'Node', 'Express'],
-	  github:,
+      github:"https://github.com/adelgado0723/Werewolf",
     },
     {
       name: 'Geek Peek',
@@ -29,7 +29,7 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['Django', 'Python', 'SQLite', 'JavaScript', 'HTML', 'CSS', 'BootStrap'],
-	  github:,
+      github:"https://github.com/adelgado0723/GeekPeek",
     },
     {
       name: 'Decision Tree Generator',
@@ -47,7 +47,7 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['Java', 'Mschine Learning'],
-	  github:,
+      github:"https://github.com/adelgado0723/DecisionTreeGenerator",
     },
     {
       name: 'Steg Tool',
@@ -62,7 +62,7 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
-	  github:,
+      github:"https://github.com/adelgado0723/Steg-Tool",
     },
     {
       name: 'RSA',
@@ -77,12 +77,12 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
-	  github:,
+      github: "https://github.com/adelgado0723/RSAText-FileEncryption",
     },
     {
       name: 'Portfolio',
       label: 'My Projects',
-	  info: 'Project 6 Description',
+	    info: 'Project 6 Description',
       images: [
         'https://picsum.photos/id/139/250/250',
         'https://picsum.photos/id/430/250/250',
@@ -92,7 +92,7 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
-	  github:,
+      github: "https://github.com/adelgado0723/andy-delgado.com",
     },
     {
       name: 'Pet Adoption',
@@ -105,11 +105,11 @@ const Data = {
       background: 'https://picsum.photos/id/483/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
-	  github:,
+      technnologies: ['React','JavaScript', 'HTML', 'CSS'],
+      github: "https://github.com/adelgado0723/IntroToReact",
     },
     {
-      name: 'Project 8',
+      name: 'Other Projects',
       label: 'Read more about project 8',
       info: 'Project 8 Description',      
 	  images: [
