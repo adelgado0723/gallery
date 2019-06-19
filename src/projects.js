@@ -1,8 +1,8 @@
 const Data = {
   projects: [
     {
-      name: 'Project 1',
-      label: 'Enterprise pencil solution',
+      name: 'Werewolf',
+      label: 'Multiplayer Role Playing Game',
       info: 'Project 1 Description',
       images: [
         'https://picsum.photos/id/101/250/250',
@@ -13,11 +13,12 @@ const Data = {
       background: 'https://picsum.photos/id/555/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
+      technnologies: ['Python', 'Tkinter', 'TCP Sockets', 'Node', 'Express'],
+	  github:,
     },
     {
-      name: 'Project 2',
-      label: 'A mobile adventure',
+      name: 'Geek Peek',
+      label: 'Nerdy Book Store',
       info: 'Project 2 Description',
       images: [
         'https://picsum.photos/id/121/250/250',
@@ -27,11 +28,12 @@ const Data = {
       background: 'https://picsum.photos/id/528/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
+      technnologies: ['Django', 'Python', 'SQLite', 'JavaScript', 'HTML', 'CSS', 'BootStrap'],
+	  github:,
     },
     {
-      name: 'Project 3',
-      label: 'Hacking',
+      name: 'Decision Tree Generator',
+      label: 'Data-driven Decision Making',
       info: 'Project 3 Description',
       images: [
         'https://picsum.photos/id/383/250/250',
@@ -44,11 +46,12 @@ const Data = {
       background: 'https://picsum.photos/id/657/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
+      technnologies: ['Java', 'Mschine Learning'],
+	  github:,
     },
     {
-      name: 'Project 4',
-      label: 'Read more about project 4',
+      name: 'Steg Tool',
+      label: 'Text-In-Image Encryption',
       info: 'Project 4 Description',
       images: [
         'https://picsum.photos/id/348/250/250',
@@ -59,10 +62,11 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
+	  github:,
     },
     {
-      name: 'Project 5',
-      label: 'Read more about project 5',
+      name: 'RSA',
+      label: 'Text Encryption',
       info: 'Project 5 Description',
       images: [
         'https://picsum.photos/id/127/250/250',
@@ -73,11 +77,12 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
+	  github:,
     },
     {
-      name: 'Project 6',
-      info: 'Project 6 Description',
-      label: 'Read more about project 6',
+      name: 'Portfolio',
+      label: 'My Projects',
+	  info: 'Project 6 Description',
       images: [
         'https://picsum.photos/id/139/250/250',
         'https://picsum.photos/id/430/250/250',
@@ -87,11 +92,12 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
+	  github:,
     },
     {
-      name: 'Project 7',
-      info: 'Project 7 Description',
+      name: 'Pet Adoption',
       label: 'Read more about project 7',
+      info: 'Project 7 Description',
       images: [
         'http://via.placeholder.com/250x250',
         'http://via.placeholder.com/250x250',
@@ -100,12 +106,13 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
+	  github:,
     },
     {
       name: 'Project 8',
-      info: 'Project 8 Description',
       label: 'Read more about project 8',
-      images: [
+      info: 'Project 8 Description',      
+	  images: [
         'http://via.placeholder.com/250x250',
         'http://via.placeholder.com/250x250',
       ],
@@ -113,6 +120,7 @@ const Data = {
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
       technnologies: ['JavaScript', 'HTML', 'CSS'],
+	  github:,
     },
   ],
 };
