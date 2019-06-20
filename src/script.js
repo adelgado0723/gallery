@@ -4,7 +4,7 @@ const galleryContainer = document.querySelector('.gallery-container');
 const galleryModal = document.querySelector('.gallery-modal');
 // const galleryModalBody = document.querySelector('.gallery-modal-body');
 const projectName = document.querySelector('.project-name');
-const projectDesc = document.querySelector('.project-desc');
+// const projectDesc = document.querySelector('.project-desc');
 // const projectContent = document.querySelector('.project-content');
 const smallCarouselImages = document.querySelector('.carousel-smaller');
 const activeCarouselImage = document.querySelector('.active-large');
@@ -76,7 +76,7 @@ Data.projects.forEach(function loadProjects(project) {
 
   function setUpModalContext() {
     projectName.textContent = project.name;
-    projectDesc.textContent = project.info;
+    // projectDesc.textContent = project.info;
     activeCarouselImage.src = project.images[0];
     activeCarouselImage.alt = project.name + ' image';
     projectSummary.textContent = project.summary;

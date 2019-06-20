@@ -1,5 +1,4 @@
 /* Demo gallery images */
-@import './carousel.css';
 $body-font: 'Lato',
 sans-serif;
 $title-font: 'Fugaz One',
@@ -167,35 +166,21 @@ body {
 }
 
 .gallery-modal {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  // overflow: hidden;
   top: 0;
   left: 0;
   z-index: 9999;
-  padding: 0;
+  padding: 0%;
   margin: 0;
   background: rgba(0, 0, 0, 0.8);
-  // overflow: scroll;
 
-  // transition: all 3500ms ease-in-out, opacity 7500ms ease-in-out;
 
   .gallery-modal-body {
     background: rgba(122, 122, 122, 0.8);
-    padding: 15px;
-    margin: 25px;
-
-    // overflow-y: scroll;
-
-    // max-height: 85%;
-    // max-width: 85%;
-    // width: 80%;
-    // height: 95%;
-
-    // padding: 0px 0px;
-    // left: 0;
-    // top: 0;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
 
     .modal-close {
       float: right;
@@ -203,83 +188,79 @@ body {
       transition: all 500ms ease-in-out;
       height: 25px;
       padding: 10px;
-      // border: 5px solid red;
     }
 
     .project-name {
-      float: left;
       padding: 10px;
       font-size: 50px;
+      text-align: center;
     }
 
-    .gallery-modal-container {
-      font-size: 16px;
-      line-height: 1.4;
-      text-align: left;
-      font-family: 'Vollkorn', serif;
+    .project-content {
       display: grid;
-      // padding: 0px 20px;
-      // width: 100%;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       justify-content: center;
       align-content: center;
-      height: 100%;
       width: 100%;
+      height: 100%;
 
-      .gallery-modal-item {
-        font-family: $body-font;
-        text-transform: uppercase;
-        font-size: 20px;
-        text-align: left;
-        color: #333;
+      .carousel {
+        grid-template-columns: 1/2;
+        grid-template-rows: 1/-1;
         width: 100%;
+        height: 100%;
         display: grid;
         grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
         justify-content: center;
-        align-content: center;
-        height: 100%;
 
-
-        p {
-          margin-top: 15px;
-          font-size: 16px;
-          font-family: 'Vollkorn', serif;
-          text-transform: none;
-          font-weight: normal;
-          line-height: 1.5;
+        .active-large {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          height: auto;
+          width: auto;
         }
 
-        .project-content {
+        .carousel-smaller {
           display: grid;
           grid-gap: 10px;
-          grid-template-columns: 2fr 1fr;
-          grid-template-rows: 2fr 1fr;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 100%;
-          // margin: 15px;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-column: 1/2;
+          grid-row: 2/3;
 
-          .carousel {
-            grid-template-columns: 1/2;
-            grid-template-rows: 1/3;
+          img {
+            width: 12vh;
+            height: 12vh;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid #333;
           }
 
-          .summary {
-            grid-template-columns: 2/3;
-            grid-template-rows: 1/2;
-            font-size: 15px;
+          img:hover {
+            border-color: #ad343e;
+            opacity: 0.6;
+            transition: all 500ms ease-in-out;
           }
-
-          .technologies {
-            grid-template-columns: 2/3;
-            grid-template-rows: 2/3;
-          }
-
-
         }
 
-        img {}
       }
+
+      .summary {
+        grid-template-columns: 2/-1;
+        grid-template-rows: 1/2;
+        font-size: 15px;
+      }
+
+      .technologies {
+        grid-template-columns: 2/-1;
+        grid-template-rows: 2/-1;
+      }
+
     }
 
   }
