@@ -13,7 +13,7 @@ const Data = {
       background: 'https://picsum.photos/id/555/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['Python', 'Tkinter', 'TCP Sockets', 'Node', 'Express'],
+      technologies: ['Python', 'Tkinter', 'TCP Sockets', 'Node', 'Express'],
       github:"https://github.com/adelgado0723/Werewolf",
     },
     {
@@ -28,7 +28,7 @@ const Data = {
       background: 'https://picsum.photos/id/528/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['Django', 'Python', 'SQLite', 'JavaScript', 'HTML', 'CSS', 'BootStrap'],
+      technologies: ['Django', 'Python', 'SQLite', 'JavaScript', 'HTML', 'CSS', 'BootStrap'],
       github:"https://github.com/adelgado0723/GeekPeek",
     },
     {
@@ -46,7 +46,7 @@ const Data = {
       background: 'https://picsum.photos/id/657/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['Java', 'Mschine Learning'],
+      technologies: ['Java', 'Mschine Learning'],
       github:"https://github.com/adelgado0723/DecisionTreeGenerator",
     },
     {
@@ -61,7 +61,7 @@ const Data = {
       background: 'https://picsum.photos/id/487/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript', 'HTML', 'CSS'],
       github:"https://github.com/adelgado0723/Steg-Tool",
     },
     {
@@ -76,7 +76,7 @@ const Data = {
       background: 'https://picsum.photos/id/481/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript', 'HTML', 'CSS'],
       github: "https://github.com/adelgado0723/RSAText-FileEncryption",
     },
     {
@@ -91,7 +91,7 @@ const Data = {
       background: 'https://picsum.photos/id/482/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript', 'HTML', 'CSS'],
       github: "https://github.com/adelgado0723/andy-delgado.com",
     },
     {
@@ -105,7 +105,7 @@ const Data = {
       background: 'https://picsum.photos/id/483/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['React','JavaScript', 'HTML', 'CSS'],
+      technologies: ['React','JavaScript', 'HTML', 'CSS'],
       github: "https://github.com/adelgado0723/IntroToReact",
     },
     {
@@ -119,7 +119,7 @@ const Data = {
       background: 'https://picsum.photos/id/455/800/800',
       summary:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eveniet ullam natus molestiae quam unde in quo sit voluptatibus modi maxime aliquam nisi itaque adipisci ea harum beatae? Vel, recusandae?  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nihil, deserunt provident, error ea qui facere blanditiis, corrupti illum itaque officiis nisi. Nemo odio quibusdam, quidem reprehenderit enim laboriosam?',
-      technnologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript', 'HTML', 'CSS'],
 	  github:,
     },
   ],

@@ -19,10 +19,9 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 70px;
   background-color: #333;
-
-  // overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
 }
 
 .site-wrap {
@@ -116,6 +115,7 @@ body {
   display: none;
   position: absolute;
   transition: $transition;
+
 }
 
 .img-container>.img>.gallery-label {
@@ -153,7 +153,6 @@ body {
 }
 
 .toggle-content.is-visible {
-  // display: block;
   height: auto;
   opacity: 1;
   display: grid;
@@ -182,6 +181,10 @@ body {
     text-align: center;
     font-family: 'Vollkorn';
     margin: 20px;
+    // display: grid;
+    // justify-content: center;
+    // align-content: center;
+
 
     .modal-close {
       float: right;
@@ -198,80 +201,101 @@ body {
     }
 
     .project-content {
-      // grid-gap: 10px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      display: grid;
       justify-content: center;
-      align-content: center;
-      width: 100%;
-      height: 100%;
-      // margin: 10px;
+      align-items: center;
+      background: #406997b6;
+      margin: 2vh 4vw;
+      padding: 2vh 2vw;
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
+      text-align: left;
+      // grid-gap: 2%;
+      width: 80%;
 
-      .carousel {
+      .active-large {
+        height: 45vh;
+        width: auto;
+        max-width: 500px;
+        grid-row: 1/2;
         grid-column: 1/2;
-        grid-row: 1/3;
+        align-self: center;
+        justify-self: center;
+      }
+
+      .carousel-smaller {
+        max-width: 500px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+
+        img {
+          width: 11vh;
+          height: 11vh;
+          border-radius: 50%;
+          display: inline-block;
+          cursor: pointer;
+          border: 2px solid #333;
+        }
+
+        img:hover {
+          border-color: #ad343e;
+          opacity: 0.6;
+          transition: all 500ms ease-in-out;
+        }
+      }
+
+
+      .info-container {
+        display: grid;
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        align-content: center;
-
-        .active-large {
-          grid-column: 1/2;
-          grid-row: 1/2;
-          height: auto;
-          width: auto;
-        }
-
-        .carousel-smaller {
-          display: grid;
-          grid-gap: 10px;
-          grid-template-rows: 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-column: 1/2;
-          grid-row: 2/3;
-
-          img {
-            width: 12vh;
-            height: 12vh;
-            border-radius: 50%;
-            display: inline-block;
-            cursor: pointer;
-            border: 2px solid #333;
-          }
-
-          img:hover {
-            border-color: #ad343e;
-            opacity: 0.6;
-            transition: all 500ms ease-in-out;
-          }
-        }
-
-      }
-
-      .summary {
-        grid-column: 2/3;
+        grid-gap: 10%;
         grid-row: 1/2;
-        font-size: 15px;
-        text-align: center;
-        text-justify: center;
-        padding: 10px;
-        display: grid;
-        justify-content: center;
-        align-content: center;
+        grid-column: 2/3;
+        // justify-content: baseline;
+        // align-items: ;
+
+
+        .info-top {
+          display: grid;
+          grid-gap: 4%;
+          // justify-content: start;
+          // align-items: baseline;
+
+          // align-items: center;
+          .technologies {
+            // padding: 0;
+          }
+        }
       }
 
-      .technologies {
-        grid-column: 2/3;
+      .project-buttons {
+        // width: 100%;
+        // height: 100%;
+        align-self: center;
         grid-row: 2/3;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        padding: 0;
+        grid-column: 2/3;
+        // display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+
+        height: 100%;
+
+        .button {
+          width: 12vw;
+          height: 8vh;
+          border-radius: 15px;
+          font-size: 20px;
+        }
       }
 
     }

@@ -80,7 +80,7 @@ Data.projects.forEach(function loadProjects(project) {
     activeCarouselImage.src = project.images[0];
     activeCarouselImage.alt = project.name + ' image';
     projectSummary.textContent = project.summary;
-    projectTechnologies.innerHTML = project.technnologies
+    projectTechnologies.innerHTML = project.technologies
       .map(makeTechList)
       .join('');
 
