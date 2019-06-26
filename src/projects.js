@@ -3,7 +3,7 @@ const Data = {
     {
       name: 'Werewolf',
       label: 'Multiplayer Role Playing Game',
-      info: 'Project 1 Description',
+      // info: 'Project 1 Description',
       images: [
         'https://github.com/adelgado0723/Werewolf/blob/master/Client/images/WereWolf_512x512.gif',
         'https://picsum.photos/id/103/250/250',
@@ -20,7 +20,7 @@ const Data = {
     {
       name: 'Geek Peek',
       label: 'Nerdy Book Store',
-      info: 'Project 2 Description',
+      // info: 'Project 2 Description',
       images: [
         'https://picsum.photos/id/121/250/250',
         'https://picsum.photos/id/133/250/250',
@@ -44,7 +44,7 @@ const Data = {
     {
       name: 'Decision Tree Generator',
       label: 'Data-driven Decision Making',
-      info: 'Project 3 Description',
+      // info: 'Project 3 Description',
       images: [
         'https://picsum.photos/id/383/250/250',
         'https://picsum.photos/id/243/250/250',
@@ -63,7 +63,7 @@ const Data = {
     {
       name: 'Steg Tool',
       label: 'Text-In-Image Encryption',
-      info: 'Project 4 Description',
+      // info: 'Project 4 Description',
       images: [
         'https://picsum.photos/id/348/250/250',
         'https://picsum.photos/id/450/250/250',
@@ -80,7 +80,7 @@ const Data = {
     {
       name: 'RSA',
       label: 'Text Encryption',
-      info: 'Project 5 Description',
+      // info: 'Project 5 Description',
       images: [
         'https://picsum.photos/id/127/250/250',
         'https://picsum.photos/id/426/250/250',
@@ -88,15 +88,15 @@ const Data = {
       ],
       background: 'https://picsum.photos/id/481/800/800',
       summary:
-        'In order to crack the encryption provided by the RSA algorithm, one must factor a very large number into its unique prime constituents; a lengthy process with no straight-forward easy solution.',
-      technologies: ['Java', 'Mathematical Concepts'],
+        '<p>The RSA algorithm for encryption draws its strength from the Fundamental Theorem Of Arithmetic, which states that any positive integer either is a prime number or can be uniquely represented as a product of prime numbers.</p> <p>In order to crack the encryption provided by the RSA algorithm, one must factor a very large number into its unique prime constituents; a lengthy process with no straight-forward easy solution.</p>',
+      technologies: ['Java', 'Number Theory', 'Modular Arithmetic'],
       github: 'https://github.com/adelgado0723/RSAText-FileEncryption',
       demo: '',
     },
     {
       name: 'Portfolio',
       label: 'My Projects',
-      info: 'Project 6 Description',
+      // info: 'Project 6 Description',
       images: [
         'https://picsum.photos/id/139/250/250',
         'https://picsum.photos/id/430/250/250',
@@ -112,7 +112,7 @@ const Data = {
     {
       name: 'Pet Adoption',
       label: 'Read more about project 7',
-      info: 'Project 7 Description',
+      // info: 'Project 7 Description',
       images: [
         'http://via.placeholder.com/250x250',
         'http://via.placeholder.com/250x250',
@@ -127,7 +127,7 @@ const Data = {
     {
       name: 'Other Projects',
       label: 'Read more about project 8',
-      info: 'Project 8 Description',
+      // info: 'Project 8 Description',
       images: [
         'http://via.placeholder.com/250x250',
         'http://via.placeholder.com/250x250',
