@@ -265,7 +265,43 @@ body {
         justify-content: center;
         align-items: center;
 
+        .technologies-container>.technologies {
+          background-color: whitesmoke;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          // height: 20vh;
+          padding: 5px;
+
+          span {
+            border-radius: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            padding: 5px;
+            background-color: lightgrey;
+          }
+
+          span:nth-of-type(1) {
+
+            margin-right: 0px;
+            background-color: lightgreen;
+          }
+
+          span:nth-of-type(2) {
+            background-color: pink;
+          }
+
+          span:nth-of-type(3) {
+            background-color: lightblue;
+          }
+
+        }
+
       }
+
+
 
       .project-buttons {
         // width: 100%;
@@ -282,11 +318,14 @@ body {
 
         height: 100%;
 
-        button {
+        .button {
           width: 12vw;
           height: 8vh;
           border-radius: 15px;
           font-size: 20px;
+
+          color: rgb(192, 93, 0);
+          background: rgb(172, 171, 171);
         }
       }
 

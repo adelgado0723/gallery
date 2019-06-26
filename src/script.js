@@ -1,15 +1,15 @@
-import Data from './data.js';
+import Data from './Projects.js';
 const modalClose = document.querySelector('.modal-close');
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryModal = document.querySelector('.gallery-modal');
-// const galleryModalBody = document.querySelector('.gallery-modal-body');
 const projectName = document.querySelector('.project-name');
-// const projectDesc = document.querySelector('.project-desc');
-// const projectContent = document.querySelector('.project-content');
 const smallCarouselImages = document.querySelector('.carousel-smaller');
 const activeCarouselImage = document.querySelector('.active-large');
 const projectSummary = document.querySelector('.summary');
 const projectTechnologies = document.querySelector('.technologies');
+const projectSrcForm = document.querySelector('.src-form');
+const projectDemoForm = document.querySelector('.demo-form');
+
 // const fadingActiveImage = document.querySelector('.fading');
 
 function fadeImage(imageURL) {
@@ -79,7 +79,9 @@ Data.projects.forEach(function loadProjects(project) {
     // projectDesc.textContent = project.info;
     activeCarouselImage.src = project.images[0];
     activeCarouselImage.alt = project.name + ' image';
-    projectSummary.textContent = project.summary;
+    projectSummary.innerHTML = project.summary;
+    projectSrcForm.setAttribute('action', project.github);
+    projectDemoForm.setAttribute('action', project.demo);
     projectTechnologies.innerHTML = project.technologies
       .map(makeTechList)
       .join('');
@@ -94,7 +96,7 @@ Data.projects.forEach(function loadProjects(project) {
 
     galleryModal.classList.add('is-visible');
     function makeTechList(tech) {
-      return `<li>${tech}</li>`;
+      return `<span>${tech}</span>`;
     }
   }
 });
