@@ -28,7 +28,7 @@ const Data = {
       ],
       background: 'https://picsum.photos/id/528/800/800',
       summary:
-        'Geek Peek is an online bookstore in the spirit of the website, www.thinkgeek.com. It was developed over the course of ten weeks, subdivided into five two-week sprints. Features were distributed to a group of five developers that worked in a Scrum/Agile Fashion. We held regular stand-up meetings as well as weekly planning, review, and retrospective meetings. The Project Requirements were specified at the onset and the developers left to schedule the user stories pertaining to their feature.',
+        'Geek Peek is an online bookstore in the spirit of the website, <a href="https://www.thinkgeek.com">ThinkGeek.com</a>. It was developed over the course of five two-week sprints using Agile/SCRUM methodologies.',
       technologies: [
         'Django',
         'Python',

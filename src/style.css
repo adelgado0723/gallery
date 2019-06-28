@@ -3,10 +3,17 @@
   font-family: "Lato", sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background: #f9f7f6;
+  background-color: #333;
+  height: 100vh;
+  width: 100vw;
+}
+
+.body-item {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -15,9 +22,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #333;
-  min-height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .site-wrap {
@@ -168,8 +174,8 @@ body {
 }
 
 .gallery-modal {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -177,13 +183,15 @@ body {
   padding: 0;
   margin: 0;
   background: rgba(0, 0, 0, 0.8);
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .gallery-modal .gallery-modal-body {
   background: rgba(122, 122, 122, 0.8);
   text-align: center;
   font-family: 'Vollkorn';
-  margin: 20px;
+  margin: 1%;
   color: papayawhip;
 }
 
@@ -196,23 +204,22 @@ body {
   padding: 10px;
 }
 
-.gallery-modal .gallery-modal-body .project-name {
-  padding: 20px;
+.gallery-modal .gallery-modal-body .project-content {
+  background: #406997;
+  margin: 6vh 6vw;
+  padding: 1vh 6vw;
+  border-radius: 15px;
+}
+
+.gallery-modal .gallery-modal-body .project-content .project-name {
+  margin: 4% 2%;
   font-size: 50px;
   text-align: center;
 }
 
-.gallery-modal .gallery-modal-body .project-content {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #406997;
-  margin: 2vh 4vw;
-  padding: 5vh 2vw;
-  border-radius: 15px;
+.gallery-modal .gallery-modal-body .project-content .modal-items {
+  width: 100%;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -220,27 +227,42 @@ body {
   -ms-grid-rows: 2fr 1fr;
       grid-template-rows: 2fr 1fr;
   text-align: left;
-  grid-gap: 4%;
+  grid-gap: 4% 3%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.gallery-modal .gallery-modal-body .project-content .active-large {
-  height: 45vh;
-  width: auto;
-  max-width: 500px;
+.gallery-modal .gallery-modal-body .project-content .modal-items .carousel {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-gap: 3%;
 }
 
-.gallery-modal .gallery-modal-body .project-content .carousel-smaller {
+.gallery-modal .gallery-modal-body .project-content .modal-items .carousel .active-large {
+  max-width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 50vh;
+}
+
+.gallery-modal .gallery-modal-body .project-content .modal-items .carousel .carousel-smaller {
   max-width: 500px;
   display: -ms-grid;
   display: grid;
@@ -249,36 +271,31 @@ body {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.gallery-modal .gallery-modal-body .project-content .carousel-smaller img {
-  width: 11vh;
-  height: 11vh;
+.gallery-modal .gallery-modal-body .project-content .modal-items .carousel .carousel-smaller img {
+  width: 14vh;
+  height: 14vh;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
   border: 2px solid #333;
 }
 
-.gallery-modal .gallery-modal-body .project-content .carousel-smaller img:hover {
+.gallery-modal .gallery-modal-body .project-content .modal-items .carousel .carousel-smaller img:hover {
   border-color: #ad343e;
   opacity: 0.6;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
 
-.gallery-modal .gallery-modal-body .project-content .info-container {
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container {
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -298,24 +315,25 @@ body {
           align-items: center;
 }
 
-.gallery-modal .gallery-modal-body .project-content .info-container .technologies-container > .technologies {
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container .technologies-container > .technologies {
   background-color: whitesmoke;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 5px;
+  height: 12vh;
+  padding: 10px;
 }
 
-.gallery-modal .gallery-modal-body .project-content .info-container .technologies-container > .technologies span {
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container .technologies-container > .technologies span {
   border-radius: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
@@ -323,39 +341,40 @@ body {
   background-color: lightgrey;
 }
 
-.gallery-modal .gallery-modal-body .project-content .info-container .technologies-container > .technologies span:nth-of-type(1) {
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container .technologies-container > .technologies span:nth-of-type(1) {
   margin-right: 0px;
   background-color: lightgreen;
 }
 
-.gallery-modal .gallery-modal-body .project-content .info-container .technologies-container > .technologies span:nth-of-type(2) {
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container .technologies-container > .technologies span:nth-of-type(2) {
   background-color: pink;
 }
 
-.gallery-modal .gallery-modal-body .project-content .info-container .technologies-container > .technologies span:nth-of-type(3) {
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container .technologies-container > .technologies span:nth-of-type(3) {
   background-color: lightblue;
 }
 
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container .summary-container h2 {
+  margin-bottom: 10px;
+}
+
+.gallery-modal .gallery-modal-body .project-content .modal-items .info-container .technologies-container h2 {
+  margin-bottom: 10px;
+}
+
 .gallery-modal .gallery-modal-body .project-content .project-buttons {
-  -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gallery-modal .gallery-modal-body .project-content .project-buttons .button {
