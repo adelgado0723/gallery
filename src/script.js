@@ -1,4 +1,4 @@
-import Data from './Projects.js';
+import Data from './projects.js';
 const modalClose = document.querySelector('.modal-close');
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryModal = document.querySelector('.gallery-modal');
