@@ -56,7 +56,7 @@ const Data = {
       background: 'https://picsum.photos/id/657/800/800',
       summary:
         "Decision Trees are a way of finding correlations in people's behavior from data about their habits. This program builds a decision tree based on a given input file and then proceeds to classify a user-provided tuple of data. In the example below, the input file holds information that a computer manufacturing company has collected about their customers. The Decision Tree Generator will attempt to find other factors and combinations of factors (such as age, income, and student status) related to that a customer's is likeliness to make a purchase.",
-      technologies: ['Java', 'Mschine Learning'],
+      technologies: ['Java', 'Machine Learning'],
       github: 'https://github.com/adelgado0723/DecisionTreeGenerator',
       demo: '',
     },

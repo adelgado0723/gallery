@@ -26,7 +26,6 @@
     "sass": "^1.21.0"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.1",
     "node-sass": "^4.12.0"
   }
 }
